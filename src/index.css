@@ -152,6 +152,10 @@ html,body{
   padding: 8px 8vw 8px 8vw;
 }
 
+.sectionPadding2{
+  padding: 40px 8vw 40px 8vw;
+}
+
 .btn{
   background-color: var(--dark-skyblue);
   padding: 8px;
@@ -178,4 +182,21 @@ html,body{
 
 ::-webkit-scrollbar{
   display: none;
+}
+
+/*------Section styling------*/
+.secTitle{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.secDes1{
+   font-size: 0.9rem;
+   color: var(--brown);
+}
+
+.secDes2{
+
 }

@@ -46,7 +46,7 @@
 }
 
 .heroText{
-    height: 80%;
+    height: 70%;
     width: 50%;
     max-width: 400px;
     display: flex;
@@ -61,9 +61,154 @@
 
 .heroText .btn{
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1rem;
     width: fit-content;
-    padding: 12px;
+    padding: 15px;
+}
+
+.who-are-we{
+  padding: 8px 8vw 8px 8vw;
+}
+
+.who-are-we .container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.who-are-we .image img{
+    width:90%;
+    height: 100%;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.who-are-we .container .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.who-are-we .container .text .secDes2{
+    max-width: 500px;
+}
+
+.homeUsp{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    transform: scale(1);
+    margin-top: 20px;
+}
+
+.homeUsp .box{
+   padding: 5px;
+   display: flex;
+   align-items: center;
+   margin-top: 10px;
+   width: 80%;
+}
+
+.homeUsp .box i{
+    margin-right: 10px;
+    background-color: var(--dark-skyblue);
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+}
+
+/*-----------Our Services Section----------*/
+.home-services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-service-card-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+   gap:40px;
+}
+
+.home-service-card{
+   padding: 10px;
+   border: 1px solid #3484ac4b;
+   text-align: center;
+   border-radius: 10px;
+}
+
+.home-service-card h3{
+   font-weight: 600;
+}
+
+.home-service-card p{
+   text-align: center;
+   padding-left: 30px;
+   padding-right: 30px;
+   opacity: 0.8;
+   padding-bottom: 20px;
+   padding-top: 10px;
+
+}
+
+.home-service-card img{
+    padding: 20px;
+}
+
+/*-------------Numbers Section--------------*/
+
+.homeNumbers{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: var(--dark-skyblue);
+    color: white;
+    min-height: 200px;
+    background: url("/images/numSec.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 40px;
+}
+
+.hnCard h1{
+    font-size: 3rem;
+}
+
+.hnCard h1, .hnCard p{
+    color: white;
+    text-align: center;
+}
+
+/*------Our Team---------*/
+
+.homeTeamContainer{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+    gap:30px;
+    justify-items: center;
+}
+
+.homeTeamCard{
+    width: fit-content;
+    background-color: #E7F0FE;
+}
+
+.homeTeamCard img{
+    height: 400px;
+}
+
+.homeTeamCard h3{
+    text-align: center;
+    font-weight: 600;
+}
+
+.homeTeamCard p{
+     text-align: center;
+     padding-bottom: 10px;
 }
 
 @media (max-width:800px)
@@ -76,6 +221,21 @@
         height: 100%;
         width: 60%;
     }
+
+    .who-are-we .container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .who-are-we .image img{
+        height: 400px;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    .who-are-we .container .text .secDes2{
+        width: 90%;
+        max-width: none;
+    }
 }
 
 @media (max-width:400px)
@@ -84,5 +244,16 @@
         width: 80%;
         top:10%;
         height: 80%;
+    }
+
+    .homeUsp{
+        display: grid;
+        grid-template-columns:repeat(1,1fr);
+        transform: scale(1);
+    }
+
+    .homeNumbers{
+        flex-direction: column;
+        min-height: 600px;
     }
 }
