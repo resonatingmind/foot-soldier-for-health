@@ -173,6 +173,7 @@
        margin-top: 20px;
        grid-column-start: 1;
        grid-column-end: 2;
+       margin-bottom: 20px;
     }
 }
 
