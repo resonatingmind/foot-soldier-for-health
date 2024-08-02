@@ -1,0 +1,190 @@
+.footer{
+    background-color: var(--light-skyblue);
+    position: relative;
+    height: 470px;
+    overflow: hidden;
+}
+
+.footerImg img{
+    width: 100vw;
+    height: 500px;
+    object-fit: cover;
+    margin-bottom: -5px;
+    position: absolute;
+    top: 0px;
+    z-index: 9;
+    opacity: 0.5;
+}
+
+.fOverlay{
+    position: absolute;
+    z-index: 10;
+    background-color: #0f659e4b;
+    background-color: #102851ca;
+    height: 100%;
+    width: 100vw;
+    top:0px;
+    z-index: 10;
+}
+
+.fContent{
+    z-index: 20;
+    color: white;
+    position: absolute;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+
+.fSec{
+    padding-top: 50px;
+}
+
+
+.sec2, .sec3, .sec4{
+   padding-top: 80px;
+}
+
+.fSec h2{
+    color: white;
+    font-weight: 500;
+}
+
+.sec1 h3{
+    color: white;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.sec1 h3{
+    margin-top: 30px;
+}
+
+.fSec p{
+    color: white;
+    font-weight: 300;
+}
+
+.fSecContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.fSecMiniContainer{
+    display: flex;
+    margin-top: 20px;
+}
+
+.fSecMiniContainer h3{
+    color: white;
+}
+
+.fSecMiniContainer p{
+   opacity: 0.8;
+}
+
+.fLinks{
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+    opacity: 0.8;
+}
+
+.fIcon{
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.sec1 img{
+    height: 100px;
+}
+
+.fContent .sec1 p{
+   opacity: 0.8;
+}
+
+.fCredit{
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.fCreditContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fCredit p{
+   color: white;
+   text-align: center;
+   margin-top: 10px;
+   font-size: 13px;
+}
+
+.fCredit i{
+    color: red;
+}
+
+.fLinks:hover{
+    opacity: 1;
+}
+
+@media (max-width:800px)
+{
+    .footer{
+       overflow: visible;
+       height: 1400px;
+    }
+
+    .fContent{
+        grid-template-columns: repeat(1,1fr);
+        overflow: visible;
+        height: 1400px;
+        justify-items: start;
+    }
+
+    .footerImg img{
+        width: 100vw;
+        height: 1400px;
+        object-fit: cover;
+        margin-bottom: -5px;
+        position: absolute;
+        top: 0px;
+        z-index: 9;
+        opacity: 0.5;
+    }
+
+    .fDes{
+        width: 80%;
+    }
+
+    .fCredit{
+       margin-top: 20px;
+       grid-column-start: 1;
+       grid-column-end: 2;
+    }
+}
+
+@media (max-width:400px)
+{
+    .fCreditContainer p{
+        font-size: 10px;
+        text-align: start;
+        width: 50%;
+    }
+
+    .fCreditContainer p:nth-child(2){
+        text-align: end;
+    }
+}

@@ -1,0 +1,87 @@
+.home::-webkit-scrollbar{
+    display: none;
+}
+
+.heroSection{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    padding-top: 50px;
+    max-height: 700px;
+}
+
+.heroImg img{
+    width: 100%;
+    height: 100vh;
+    max-height: 700px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.heroImg{
+    position: relative;
+    width: 100vw;
+}
+
+.heroText{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left:8vw;
+    z-index: 10;
+}
+
+.heroImgOverlay{
+    height: 100%;
+    position: absolute;
+    top:0px;
+    left:0px;
+    background: rgb(255,255,255);
+    background: linear-gradient(81deg, rgba(255,255,255,1) 22%, rgba(255,255,255,0.6867997198879552) 55%, rgba(255,255,255,0) 79%);
+    height: 100%;
+    width: 100%;
+    z-index: 9;
+}
+
+.heroText{
+    height: 80%;
+    width: 50%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.heroText h1{
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+.heroText .btn{
+    text-decoration: none;
+    font-size: 1.3rem;
+    width: fit-content;
+    padding: 12px;
+}
+
+@media (max-width:800px)
+{
+    .heroText{
+        transform: scale(0.9);
+        margin-top: 0px;
+        padding-top: 0px;
+        top:1%;
+        height: 100%;
+        width: 60%;
+    }
+}
+
+@media (max-width:400px)
+{
+    .heroText{
+        width: 80%;
+        top:-5%;
+    }
+}

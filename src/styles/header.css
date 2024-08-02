@@ -1,0 +1,163 @@
+.header{
+    z-index: 40;
+    position: fixed;
+    background-color: #fff;
+}
+
+.topHeader{
+    display: flex;
+    justify-content: space-between;
+    background-color: #E7F0FE;
+    font-size: 0.8rem;
+}
+
+.thLocation, .thPhone, .thEmail, .thSocial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thLocation img, .thPhone img, .thEmail img{
+   margin-right: 5px;
+   height: 20px;
+}
+
+.thSocial i{
+   font-size: 18px;
+   margin-right: 20px;
+}
+
+/*-------Bottom header-------*/
+
+.bottomHeader{
+    height: 80px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 70;
+}
+
+.bhLeft{
+
+}
+
+.bhLeft img{
+    height: 90px;
+}
+
+.bhRight{
+    margin-right: 25px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bhRight .linkType1{
+    margin-left: 50px;
+}
+
+.bhRight .btn{
+
+}
+
+.brPagesParent{
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brPagesParent i{
+    font-size: 0.9rem;
+    padding-left: 10px;
+}
+
+.brPages{
+    background-color:white;
+    position: absolute;
+    top:65px;
+    z-index: 10;
+    left: -5px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 6px;
+}
+
+.brPages .link{
+    text-decoration: none; 
+    padding: 8px;
+    width: 110px;
+}
+
+.brPages .link:hover{
+    background-color: var(--brown);
+    color: white;
+}
+
+.hoverEffect{
+    color: var(--brown);
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger img{
+    height: 30px;
+}
+
+.hamburgerList{
+    display: none;
+    position: fixed;
+    background-color: #fff;
+    height: 100vh;
+    top:110px;
+    z-index: 30;
+    right: 0px;
+    padding: 20px;
+    flex-direction: column;
+    width: 50%;
+    max-width: 300px;
+    min-width: 250px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 10px 10px 0px;
+}
+
+.hlLink{
+    margin-top: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.hlLink:hover{
+    color: var(--brown);
+}
+
+@media (min-width: 800px) {
+    .hamburgerList {
+      display: none !important;
+    }
+  }
+
+@media (max-width:800px)
+{
+    .thLocation, .thSocial{
+        display: none;
+    }
+
+    .thPhone, .thEmail{
+        font-size: 0.65rem;
+    }
+
+    .bhRight{
+        display: none;
+    }
+
+    .hamburger{
+        display: block;
+    }
+}
