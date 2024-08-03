@@ -157,6 +157,17 @@ const Home = () => {
             </div>
           </div>
         </section>
+
+        <section className="miniGallery sectionPadding">
+            <img src="/images/heroImg.jpg"></img>
+            <img src="/images/heroImg.jpg"></img>
+            <img src="/images/heroImg.jpg"></img>
+            <img src="/images/heroImg.jpg"></img>
+            <img src="/images/heroImg.jpg"></img>
+            <img src="/images/heroImg.jpg"></img>
+            <img src="/images/heroImg.jpg"></img>
+            <div><Link className="linkType1" to='/gallery'>See More</Link></div>
+        </section>
       <Footer />
     </div>
   );

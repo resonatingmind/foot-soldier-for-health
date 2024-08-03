@@ -14,6 +14,10 @@ export default function Header() {
     setIsPageDown(false);
   }
 
+  function handleHamburger(){
+    toggleMenu();
+  }
+
   return (
     <div className="header">
       <div className="topHeader sectionPadding">
@@ -68,46 +72,46 @@ export default function Header() {
           }
         >
           <div className="hamburgerLinks">
-          <Link className="hlLink" to="/home">
+          <Link onClick={{handleHamburger}} className="hlLink" to="/home">
             Home
           </Link>
-          <Link className="hlLink" to="/about-us">
+          <Link onClick={{handleHamburger}} className="hlLink" to="/about-us">
             About
           </Link>
-          <Link className="hlLink" to="/services">
+          <Link onClick={{handleHamburger}} className="hlLink" to="/services">
             Services
           </Link>
-          <Link className="hlLink" to="/contact">
+          <Link onClick={{handleHamburger}} className="hlLink" to="/contact">
             Contact
           </Link>
-          <Link className="hlLink" to="/team">
+          <Link onClick={{handleHamburger}} className="hlLink" to="/team">
             Team
           </Link>
-          <Link className="hlLink" to="/blogs">
+          <Link onClick={{handleHamburger}} className="hlLink" to="/blogs">
             Blogs
           </Link>
-          <Link className="hlLink" to="/gallery">
+          <Link onClick={{handleHamburger}} className="hlLink" to="/gallery">
             Gallery
           </Link>
-          <Link className="hlLink" to="/careers">
+          <Link onClick={{handleHamburger}} className="hlLink" to="/careers">
             Careers
           </Link>
 
           </div>
           
           <div className="hamburgerSocial">
-            <Link className="linkType1" to="/">
+            <a className="linkType1" href="/">
               <i class="fa-brands fa-facebook"></i>
-            </Link>
-            <Link className="linkType1" to="/">
+            </a>
+            <a className="linkType1" href="/">
               <i class="fa-brands fa-square-x-twitter"></i>
-            </Link>
-            <Link className="linkType1" to="/">
+            </a>
+            <a className="linkType1" href="/">
               <i class="fa-brands fa-linkedin"></i>
-            </Link>
-            <Link className="linkType1" to="/">
+            </a>
+            <a className="linkType1" href="/">
               <i class="fa-brands fa-instagram"></i>
-            </Link>
+            </a>
           </div>
         </div>
 

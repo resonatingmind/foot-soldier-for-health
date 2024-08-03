@@ -20,19 +20,19 @@ export default function Footer() {
           <div className='sec2 fSec'>
                <h2>Navigation</h2>
                <div className='fSecContainer'>
-                  <Link className='fLinks' to=''>Home</Link>
-                  <Link className='fLinks' to=''>About Us</Link>
-                  <Link className='fLinks' to=''>Contact Us</Link>
-                  <Link className='fLinks' to=''>Services</Link>
+                  <Link className='fLinks' to='/home'>Home</Link>
+                  <Link className='fLinks' to='/about-us'>About Us</Link>
+                  <Link className='fLinks' to='/contact'>Contact Us</Link>
+                  <Link className='fLinks' to='/services'>Services</Link>
                </div>
           </div>
           <div className='sec3 fSec'>
                <h2>Quick Links</h2>
                <div className='fSecContainer'>
-                  <Link className='fLinks' to=''>Blogs</Link>
-                  <Link className='fLinks' to=''>Careers</Link>
-                  <Link className='fLinks' to=''>Gallery</Link>
-                  <Link className='fLinks' to=''>Team</Link>
+                  <Link className='fLinks' to='/blogs'>Blogs</Link>
+                  <Link className='fLinks' to='/careers'>Careers</Link>
+                  <Link className='fLinks' to='/gallery'>Gallery</Link>
+                  <Link className='fLinks' to='/team'>Team</Link>
                </div>
           </div>
           <div className='sec4 fSec'>

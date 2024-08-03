@@ -132,6 +132,11 @@
    font-size: 13px;
 }
 
+.fCredit hr{
+    opacity: 0.5;
+    margin-bottom: 10px;
+}
+
 .fCredit i{
     color: red;
 }
