@@ -27,11 +27,11 @@ export default function Header() {
         </div>
         <div className="thPhone">
           <img src="\Icons\callIcon.svg"></img>
-          <span>+91 9369151305</span>
+           <a className="linkType1" href="tel:+91 9369151305"><span>+91 9369151305</span></a>
         </div>
         <div className="thEmail">
           <img src="\Icons\mailIcon.svg"></img>
-          <span>help@footsoldierforhealth.com</span>
+          <a className="linkType1" href="mailto:help@footsoldierforhealth.com"><span>help@footsoldierforhealth.com</span></a>
         </div>
         <div className="thSocial">
           <Link className="linkType1" to="/">
@@ -50,7 +50,7 @@ export default function Header() {
       </div>
       <div className="bottomHeader sectionPadding">
         <div className="bhLeft">
-          <img src="\images\FSH Logo Tranparent.png"></img>
+          <Link to='/'><img src="\images\FSH Logo Tranparent.png"></img></Link>
         </div>
 
         <div className="hamburger">
