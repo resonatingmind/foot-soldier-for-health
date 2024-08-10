@@ -1,0 +1,135 @@
+.blogCards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    gap: 15px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    justify-items: center;
+}
+
+.blogCard{
+    border-radius: 10px;
+    overflow: hidden;
+    height: 600px;
+    width: 300px;
+    cursor: pointer;
+    overflow: hidden;
+    margin-top: 20px;
+    transition: all ease-in-out 0.3s;
+}
+
+.blogCard:hover{
+    transform: scale(1.01);
+}
+
+.blogCardDes{
+   padding: 20px;
+}
+
+.blogCardDes div p{
+    font-size: 0.9rem;
+}
+
+.blogCardDes div p i{
+    padding-right: 5px;
+}
+
+.blogCardDes h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    height: 110px;
+}
+
+.blogCardDes div{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.newsAndCategoryCont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsContainer{
+   padding: 20px;
+   margin-top: 20px;
+   width: 320px;
+}
+
+.categoryContainer{
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 320px;
+}
+
+.blogCard h1{
+
+}
+
+.blogThumbnail{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.btnCont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.showMoreBtn{
+
+}
+
+.singleBlogCont{
+    margin-top: 50px;
+}
+
+.singleBlogCont .left{
+    width: 80%;
+}
+
+.singleBlogCont .left h1{
+   margin-bottom: 20px;
+   font-weight: 600;
+}
+
+.convertedContent{
+  margin-bottom: 50px;
+}
+
+.convertedContent h1, .convertedContent h2, .convertedContent h3{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.convertedContent h2{
+    font-size: 1.5rem;
+}
+
+.convertedContent h3{
+    font-size: 1.3rem;
+}
+
+.convertedContent img{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width:1200px)
+{
+    .singleBlogCont .left{
+        width: 100%;
+    }
+}
