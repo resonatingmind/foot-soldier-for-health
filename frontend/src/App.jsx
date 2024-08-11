@@ -51,7 +51,7 @@ function App() {
       element:<Contact/>
     },
     {
-      path:"/singleBlog/:id",
+      path:"/blog/:id",
       element:<SingleBlog/>
     }
   ])

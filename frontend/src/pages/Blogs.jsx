@@ -26,7 +26,7 @@ export default function Blogs() {
   }, []);
 
   const handleCardClick = (blogId) => {
-    navigate(`/singleBlog/${blogId}`);
+    navigate(`/blog/${blogId}`);
   };
 
   return (

@@ -12,9 +12,11 @@
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-js-loader": "^0.1.3",
     "react-markdown": "^9.0.1",
     "react-router-dom": "^6.25.1",
-    "react-svg": "^16.1.34"
+    "react-svg": "^16.1.34",
+    "remark-gfm": "^4.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",

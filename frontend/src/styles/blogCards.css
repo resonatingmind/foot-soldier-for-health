@@ -10,16 +10,15 @@
 .blogCard{
     border-radius: 10px;
     overflow: hidden;
-    height: 600px;
+    height: 550px;
     width: 300px;
-    cursor: pointer;
     overflow: hidden;
     margin-top: 20px;
-    transition: all ease-in-out 0.3s;
+    cursor: pointer;
 }
 
-.blogCard:hover{
-    transform: scale(1.01);
+.blogCard:hover>.blogThumbnail{
+    transform: scale(1.05);
 }
 
 .blogCardDes{
@@ -28,6 +27,7 @@
 
 .blogCardDes div p{
     font-size: 0.9rem;
+    opacity: 0.9;
 }
 
 .blogCardDes div p i{
@@ -41,10 +41,18 @@
     height: 110px;
 }
 
+.blogCardDes h3:hover{
+    color: var(--light-blue);
+}
+
 .blogCardDes div{
     display: flex;
     width: 100%;
     justify-content: space-between;
+}
+
+.blogSummary{
+    opacity: 0.9;
 }
 
 .newsAndCategoryCont{
@@ -73,8 +81,9 @@
 
 .blogThumbnail{
     width: 100%;
-    height: 220px;
+    height: 180px;
     object-fit: cover;
+    transition: all ease-in-out 0.3s;
 }
 
 .btnCont{
@@ -127,9 +136,86 @@
     margin-bottom: 20px;
 }
 
-@media (max-width:1200px)
-{
-    .singleBlogCont .left{
-        width: 100%;
-    }
+.singleBlogCont .left{
+    width: 100%;
+    max-width: 1000px;
+}
+
+.singleBlogCont{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.singleBlogCover{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.singleBlogCont .leftInfo{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.singleBlogCont .leftInfo .category{
+    margin-right: 20px;
+    background-color: var(--light-skyblue);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+.singleBlogCont .leftInfo .date{
+    padding: 10px;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+.singleBlogTitle{
+    font-size: 2.5rem;
+}
+
+.blogList{
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.blogHeading{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.blogParagraph{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.blogLink{
+    text-decoration: none;
+    color: var(--brown);
+    font-weight: 500;
+}
+
+.blogQuote{
+    font-style: italic;
+    border-left: 3px solid var(--light-blue);
+    padding-left: 20px;
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.blogImg{
+    margin-top: 30px;
 }
